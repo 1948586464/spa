@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+				background: url(img/Rainforest.jpg) no-repeat;
+			}
+			#box{
+				position: absolute;
+				left: 223px;
+				top: 0;
+				width: 920px;
+				height: 880px;
+				border: solid 4px white;
+				border-top: none;
+				background-color: black;
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+			#box #head{
+				width: 920px;
+				height: 100px;
+				background: url(img/logo_header.jpg) no-repeat;
+				background-position: left top;
+			}
+			#span-head{
+				position: absolute;
+				top: 20px;
+				left: 260px;
+				font-size: 20px;
+				font-family: sans-serif;
+				color: white;
+			}
+			#head img{
+				float: left;
+			}
+			#link{
+				position: absolute;
+				left: 520px;
+				top: 30px;
+				width: 347px;
+				height: 34px;
+				font-size: 14px;
+				text-align: center;
+			}
+			#link a{
+				text-decoration: none;
+				color: maroon;
+			}
+			#a1{
+				background: url(img/new-home.jpg) no-repeat;
+				padding-left: 23px;
+				background-position: top;
+				text-align: center;
+			}
+			#a1:hover{
+				background: url(img/new-home.jpg) no-repeat;
+				background-position: bottom;
+			}
+			#a2{
+				background: url(img/new-buy-tickets.jpg) no-repeat;
+				
+			}
+			#a2:hover{
+				background: url(img/new-buy-tickets.jpg) no-repeat;
+				background-position: left bottom;
+				text-align: center;
+			}
+			#a3{
+				background: url(img/new-contact-us.jpg) no-repeat;
+			}
+			#a3:hover{
+				background: url(img/new-contact-us.jpg) no-repeat;
+				background-position: left bottom;
+			}
+			#content{
+				position: relative;
+				top: -8px;
+			}
+			#content #form{
+				width: 190px;
+				height: 70px;
+				border-right: solid medium lightgray;
+				border-bottom: solid medium lightgray;
+				border-radius: 0 0 10px 0;
+				float: left;
+			}
+			#content #form p input+button{
+				background-color: #D3D3D3;
+			}
+			#content #form p input+button:hover{
+				background-color: white;
+			}
+			#content #nav{
+				position: relative;
+				left: 5px;
+				top: -40px;
+				height: 50px;
+			}
+			#content ul li{
+				list-style-type: none;
+				float: left;
+				width: 45px;
+				margin: 12px;
+				padding: 55px;
+				border-bottom-left-radius: 61px;
+				border-bottom-right-radius: 61px;
+			}
+			#content ul li a{
+				text-decoration: none;
+				color: white;
+				font-size: 14px;
+				text-align: justify;
+			}
+			#li-1{
+				background: url(img/button_visitors.jpg) repeat-x;
+				background-position: center;
+			}
+			#li-2{
+				background: url(img/button_teachers.jpg) repeat-x;
+				background-position: center;
+			}
+			#li-3{
+				background: url(img/button_events.jpg) repeat-x;
+				background-position: center;
+			}
+			#li-4{
+				background: url(img/button_kids.jpg) repeat-x;
+				background-position: center;
+			}
+			#li-1:hover{
+				text-decoration: underline;
+				background: url(img/button_visitors.jpg) repeat-x;
+				background-position: center;
+			}
+			#li-2:hover{
+				text-decoration: underline;
+				background: url(img/button_teachers.jpg) repeat-x;
+				background-position: center;
+			}
+			#li-3:hover{
+				background: url(img/button_events.jpg) repeat-x;
+				background-position: center;
+				text-decoration: underline;
+			}
+			#li-4:hover{
+				background: url(img/button_kids.jpg) repeat-x;
+				background-position: center;
+				text-decoration: underline;
+			}
+			#content #left{
+				position: relative;
+				top: -85px;
+				left: 10px;
+				font-size: 12px;
+				width: 190px;
+			}
+			#left a{
+				/* text-indent: 2em; */
+				text-align: left;
+				color: gray;
+				text-decoration: none;
+		    }
+			#left a:hover{
+				color: lightblue;
+			}
+			#content #right{
+				position: absolute;
+				top: 70px;
+				left: 210px;
+				width: 690px;
+			}
+			#content #right p{
+				color: white;
+			}
+			#content #right #pic{
+				width: 690px;
+				height: 200px;
+				background: url(img/Grand_Canyon.jpg) no-repeat;
+				background-size: 690px 200px;
+			}
+			#p1{
+				font-size: 24px;
+				font-family: "verdana, geneva, arial, helvetica, sans-serif";
+			}
+			#content #right p:not(#p1){
+				font-size: 15px;
+				text-indent: 2em;
+				text-align: justify;
+				padding: 2px;
+			}
+			#foot ul{
+				position: absolute;
+				left: 600px;
+				top: 820px;
+				display: inline-block;
+				list-style-type: none;
+			}
+			#foot ul li{
+				float: left;
+				padding: 8px;
+			}
+			#foot a{
+				color: lightgray;
+				font-size: 12px;
+				text-decoration: none;
+			}
+			#foot a:hover{
+				color: white;
+			}
+			#foot p{
+				position: relative;
+				left: 10px;
+				top: 10px;
+				color: white;
+				font-size: 13px;
+			}
+			#foot span{
+				color: deepskyblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div id="head">
+				<span id="span-head">保护地球就是保护全人类</span>
+				<table id="link">
+					<tr>
+						<td id="a1"><a href="#">首&nbsp;&nbsp;&nbsp;页</a></td>
+						<td id="a2"><a href="#">爱心义卖</a></td>
+						<td id="a3"><a href="#">联系我们</a></td>
+					</tr>
+				</table>
+			</div>
+			<hr color="white" width="920px" />
+			<div id="content">
+				<form id="form">
+					<p style="position: absolute;left: 10px;">
+					<input type="text" style="width: 120px;" placeholder="请输入"/>
+					<button>GO</button>
+					</p>
+				</form>
+				<ul id="nav">
+					<li id="li-1"><a href="#">环保行为</a></li>
+					<li id="li-2"><a href="#">环保新闻</a></li>
+					<li id="li-3"><a href="#">环保动态</a></li>
+					<li id="li-4"><a href="#">为了未来</a></li>
+				</ul>
+				<div id="left">
+					<p><a href="#" style="color: lightblue;">今日导读</a></p>
+					<p><a href="#" >温室气体排放统计项目取得阶段性进展</a></p>
+					<p><a href="#" >沈阳国家环境建设样板城创建规划通过专家论证</a></p>
+					<p><a href="#">环保投资外委课题验收及投资核算项目启动会召开</a></p>
+					<p><a href="#">环保“十二五”规划部分省区座谈会在西安召开</a></p>
+					<p><a href="#" >环境监管能力建设典型案例外委课题专家验收会召开</a></p>
+					<p><a href="#">王金南参加全国人大“十二五”规划专家座谈会</a></p>
+					<p><a href="#" >环境规划院第一期环境规划学术沙龙成功举行</a></p>
+					<p><a href="#" >规划司规划院开展2010年一季度环境经济形势分析工作</a></p>
+					<p><a href="#" >关于开展2010年度环保科技成果登记工作的通知</a></p>
+					<p><a href="#">区域大气污染联防联控国际研讨会取得圆满成功</a></p>
+					<p><a href="#">重金属污染综合防治技术研讨会成功举办</a></p>
+				</div>
+				<div id="right">
+					<p id="p1">观澜率先启动低碳经济试点示范创建工作</p>
+					<div id="pic"></div>
+				    <p>气候变化、资源枯竭、环境恶化等问题正成为威胁人类生存的因素，建设低碳城市已成为深圳的未来发展战略之一，广受市民关注。为唤起更多市民的环保意识，普及低碳生活常识，市人居委近日启动了“2010年深圳百万市民共建宜居生态城市”系列活动，主题是“低碳深圳·绿色未来”。昨天是第42个“世界地球日”，市人居委组织开展了“我为地球体检”市民环境监测体验活动。以此为契机，本报与市人居委合作，自今天起，特推出“低碳深圳·绿色未来”专栏，对百万市民共建宜居生态城市进行系列报道，让“今天，你低碳了吗”成为我们每一个人的生活方式。</p>
+				    <p> 昨天是世界地球日，40多位市民分成三组，前往少年宫、地铁站、益田小学、市民中心服务大厅、梅林一村、星河丹堤居民家庭等六个地点现场监测，为深圳填写“地球健康体检报告”。经过市民和专家的检测，可喜的是，这六处噪声、电磁辐射、空气射线、放射性的检测结果都是合格的。(梅子发表) </p>
+				</div>
+			</div>
+			<hr style="width: 920px;color: white;"/>
+			<div id="foot">
+				<p><span>保护环境,人人有责</span>-请从我们每一个人做起</p>
+				<ul>
+					<li><a href="#">如何保护环境</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">站点导航</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
